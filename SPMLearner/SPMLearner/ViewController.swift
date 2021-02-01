@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     func testDependency() -> Void {
-        Alamofire.Session.default.request("https://bbs.hupu.com/40622370.html").response { (responseObj) in
+        Alamofire.Session.default.request("http://61.143.224.166:8071/phone/servertimeios?from=2&fromKind=2&r=1612170416&version=5.71").response { (responseObj) in
             guard let data = responseObj.data else { return }
             let string2:String? =   String.init(data: data, encoding: .utf8)
             guard let str = string2 else { return }
