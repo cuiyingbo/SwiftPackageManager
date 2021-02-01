@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1C123AA25BACCDC00A6B755 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B1C123A925BACCDC00A6B755 /* Alamofire */; };
+		B1DA174725C7F6F900BAB45E /* SomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B1DA174625C7F6F900BAB45E /* SomeFeature */; };
 		B1EEA27125BAB83000B97E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EEA27025BAB83000B97E4C /* AppDelegate.swift */; };
 		B1EEA27325BAB83000B97E4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EEA27225BAB83000B97E4C /* SceneDelegate.swift */; };
 		B1EEA27525BAB83000B97E4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EEA27425BAB83000B97E4C /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C123AA25BACCDC00A6B755 /* Alamofire in Frameworks */,
+				B1DA174725C7F6F900BAB45E /* SomeFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 			name = SPMLearner;
 			packageProductDependencies = (
 				B1C123A925BACCDC00A6B755 /* Alamofire */,
+				B1DA174625C7F6F900BAB45E /* SomeFeature */,
 			);
 			productName = SPMLearner;
 			productReference = B1EEA26D25BAB83000B97E4C /* SPMLearner.app */;
@@ -374,6 +377,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B1C123A425BACAFA00A6B755 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		B1DA174625C7F6F900BAB45E /* SomeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SomeFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
