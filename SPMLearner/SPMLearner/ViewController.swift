@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         testDependency()
         testSomeFeature()
         SomeFeature().testAlamofire()
+        
     }
 
     func testDependency() -> Void {
@@ -31,6 +32,10 @@ class ViewController: UIViewController {
     func testSomeFeature() -> Void {
         let hi = SomeFeature()
         NSLog(hi.text)
+    }
+    @IBAction func tapSomeVC(_ sender: Any) {
+        let vc = SomeVC.instantiate()
+        show(vc, sender: nil)
     }
 }
 
