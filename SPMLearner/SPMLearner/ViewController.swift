@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         testDependency()
         testSomeFeature()
+        SomeFeature().testAlamofire()
     }
 
     func testDependency() -> Void {
