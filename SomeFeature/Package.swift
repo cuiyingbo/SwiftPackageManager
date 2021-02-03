@@ -24,7 +24,8 @@ let package = Package(
             name: "SomeFeature",
             dependencies: ["Other",
                            "User",
-                           .product(name: "Alamofire", package: "Alamofire")]),
+                           .product(name: "Alamofire", package: "Alamofire")],
+            resources: [.copy("some.txt")]),
         .target(
             name: "Other",
             dependencies: [.product(name: "Alamofire", package: "Alamofire")]),

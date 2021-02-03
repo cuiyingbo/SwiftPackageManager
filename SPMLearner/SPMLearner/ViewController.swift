@@ -8,7 +8,6 @@
 import UIKit
 import Alamofire
 import SomeFeature
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
