@@ -37,5 +37,9 @@ class ViewController: UIViewController {
         let vc = SomeVC.instantiate()
         show(vc, sender: nil)
     }
+    @IBAction func tapOtherSomeVC(_ sender: Any) {
+        let vc = SomeFeature.init().otherSomeVC()
+        show(vc, sender: nil)
+    }
 }
 

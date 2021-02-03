@@ -1,4 +1,5 @@
 import Alamofire
+import Other
 public struct SomeFeature {
     public var text = "Hello, World!"
     public init(text:String = "hi SomeFeature") {
@@ -10,5 +11,9 @@ public struct SomeFeature {
             guard let time = String(data: data, encoding: .utf8) else{return}
             debugPrint("SomeFeature->testAlamofire() :",time)
         }
+    }
+    public func otherSomeVC() -> Other.SomeVC{
+        let vc = Other.SomeVC.instantiate()
+        return vc
     }
 }

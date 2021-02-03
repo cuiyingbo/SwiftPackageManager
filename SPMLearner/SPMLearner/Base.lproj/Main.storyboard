@@ -18,18 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVL-z1-TSs">
-                                <rect key="frame" x="187" y="433" width="40" height="30"/>
-                                <state key="normal" title="Some"/>
+                                <rect key="frame" x="124.5" y="433" width="165" height="30"/>
+                                <state key="normal" title="SomeFeature：SomeVC"/>
                                 <connections>
                                     <action selector="tapSomeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DI3-JO-qQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-KE-LY0">
+                                <rect key="frame" x="103" y="473" width="208" height="30"/>
+                                <state key="normal" title="SomeFeature：Other.SomeVC"/>
+                                <connections>
+                                    <action selector="tapOtherSomeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8p-Pz-Iri"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RfM-KE-LY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Vj-rA-Fvn"/>
                             <constraint firstItem="wVL-z1-TSs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JIn-Jl-eiw"/>
                             <constraint firstItem="wVL-z1-TSs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SY8-GX-kuO"/>
+                            <constraint firstItem="RfM-KE-LY0" firstAttribute="top" secondItem="wVL-z1-TSs" secondAttribute="bottom" constant="10" id="yUp-0Q-yN3"/>
                         </constraints>
                     </view>
                 </viewController>

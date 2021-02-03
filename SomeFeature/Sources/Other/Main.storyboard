@@ -12,7 +12,7 @@
         <!--SomeVC-->
         <scene sceneID="9Ar-NY-eXG">
             <objects>
-                <viewController id="jXr-qj-1cj" customClass="SomeVC" customModule="Other" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SomeVC" storyboardIdentifier="SomeVC" id="jXr-qj-1cj" customClass="SomeVC" customModule="Other" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJa-bH-Kml">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,13 @@
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button" image="icon/ds_button_more"/>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzQ-bQ-gPR">
+                                <rect key="frame" x="-14" y="70" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Other" id="tWn-jP-Jn8"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sgy-s4-Oi8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
