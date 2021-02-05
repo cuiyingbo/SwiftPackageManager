@@ -25,8 +25,9 @@ let package = Package(
             name: "SomeFeature",
             dependencies: ["Other",
                            "User",
-                           "RXSwift",
-                           .product(name: "Alamofire", package: "Alamofire")],
+                           "RXSwiftDemo",
+                           .product(name: "Alamofire", package: "Alamofire"),
+                            .product(name: "RxCocoa", package: "RxSwift")],
             resources: [.copy("some.txt")]),
         .target(
             name: "Other",
@@ -34,8 +35,9 @@ let package = Package(
         .target(
             name: "User",
             dependencies: [.product(name: "Alamofire", package: "Alamofire")]),
-        .target(name: "RXSwift",
-                dependencies: [Target.Dependency.product(name: "Alamofire", package: "Alamofire")]),
+        .target(name: "RXSwiftDemo",
+                dependencies: [Target.Dependency.product(name: "Alamofire", package: "Alamofire"),
+                               .product(name: "RxCocoa", package: "RxSwift")]),
         .testTarget(
             name: "SomeFeatureTests",
             dependencies: ["SomeFeature"]),
