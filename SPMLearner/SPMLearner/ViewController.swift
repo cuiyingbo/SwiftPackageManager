@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SomeFeature
+import RXSwiftDemo
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -38,6 +39,10 @@ class ViewController: UIViewController {
     }
     @IBAction func tapOtherSomeVC(_ sender: Any) {
         let vc = SomeFeature.init().otherSomeVC()
+        show(vc, sender: nil)
+    }
+    @IBAction func tapToRxSwiftDemo(_ sender: Any) {
+        let vc = RXSwiftDemo.DriverVC.instaniate()
         show(vc, sender: nil)
     }
 }

@@ -31,6 +31,13 @@
                                     <action selector="tapOtherSomeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8p-Pz-Iri"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-TW-R3e">
+                                <rect key="frame" x="135.5" y="518" width="143" height="30"/>
+                                <state key="normal" title="RXSwiftDemo：Main"/>
+                                <connections>
+                                    <action selector="tapToRxSwiftDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USy-P7-41n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,6 +45,8 @@
                             <constraint firstItem="RfM-KE-LY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Vj-rA-Fvn"/>
                             <constraint firstItem="wVL-z1-TSs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JIn-Jl-eiw"/>
                             <constraint firstItem="wVL-z1-TSs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SY8-GX-kuO"/>
+                            <constraint firstItem="1hf-TW-R3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDO-gg-muA"/>
+                            <constraint firstItem="1hf-TW-R3e" firstAttribute="top" secondItem="RfM-KE-LY0" secondAttribute="bottom" constant="15" id="VkY-LA-A4j"/>
                             <constraint firstItem="RfM-KE-LY0" firstAttribute="top" secondItem="wVL-z1-TSs" secondAttribute="bottom" constant="10" id="yUp-0Q-yN3"/>
                         </constraints>
                     </view>
