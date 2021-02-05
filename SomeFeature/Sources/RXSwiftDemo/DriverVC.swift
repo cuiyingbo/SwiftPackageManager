@@ -23,9 +23,13 @@ public class DriverVC: UIViewController{
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-//            .observeOn(MainScheduler.instance).catchErrorJustReturn("检查到了错误")
+        self.observer()
+    }
+}
+extension DriverVC{
+    func observer(){
         let result = inputTextField.rx.text.skip(1).flatMap { (input) -> Observable<Any>  in
-            return self.request(inputText: input!)
+            return self.request(inputText: input!).observeOn(MainScheduler.instance).catchErrorJustReturn("检查到了错误")
         }.share(replay: 1, scope: .whileConnected)
         result.subscribe { (even) in
             print(even)
@@ -40,8 +44,6 @@ public class DriverVC: UIViewController{
                 
         }.disposed(by: _disposeBag)
     }
-}
-extension DriverVC{
     func request(inputText: String) -> Observable<Any> {
         print("请求网络了\(Thread.current)")
         return Observable<Any>.create { (ob) -> Disposable in
