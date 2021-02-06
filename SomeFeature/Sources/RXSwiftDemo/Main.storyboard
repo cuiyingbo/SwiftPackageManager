@@ -21,8 +21,8 @@
                                 <rect key="frame" x="184" y="138" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果显示" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hka-IN-ggA">
-                                <rect key="frame" x="172.5" y="809.5" width="69.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hka-IN-ggA">
+                                <rect key="frame" x="15" y="809.5" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,15 +44,17 @@
                             <constraint firstItem="sMb-Ua-anL" firstAttribute="top" secondItem="dE7-Q1-vcS" secondAttribute="bottom" constant="16" id="65i-xD-Ee7"/>
                             <constraint firstItem="ZJN-xd-OqA" firstAttribute="bottom" secondItem="hka-IN-ggA" secondAttribute="bottom" constant="32" id="6SK-rD-Ayp"/>
                             <constraint firstItem="PN4-yG-p6g" firstAttribute="centerX" secondItem="03O-JO-qQt" secondAttribute="centerX" id="89B-6B-HUQ"/>
+                            <constraint firstAttribute="trailing" secondItem="hka-IN-ggA" secondAttribute="trailing" constant="15" id="Aw5-Em-DCU"/>
+                            <constraint firstItem="hka-IN-ggA" firstAttribute="leading" secondItem="03O-JO-qQt" secondAttribute="leading" constant="15" id="GFe-Ed-pDK"/>
                             <constraint firstItem="sMb-Ua-anL" firstAttribute="centerX" secondItem="03O-JO-qQt" secondAttribute="centerX" id="hkC-xF-CFo"/>
                             <constraint firstItem="dE7-Q1-vcS" firstAttribute="top" secondItem="ZJN-xd-OqA" secondAttribute="top" constant="94" id="iZw-Px-eBD"/>
-                            <constraint firstItem="hka-IN-ggA" firstAttribute="centerX" secondItem="03O-JO-qQt" secondAttribute="centerX" id="m2f-25-mfr"/>
                             <constraint firstItem="dE7-Q1-vcS" firstAttribute="centerX" secondItem="03O-JO-qQt" secondAttribute="centerX" id="sgW-qI-Okr"/>
                             <constraint firstItem="PN4-yG-p6g" firstAttribute="top" secondItem="sMb-Ua-anL" secondAttribute="bottom" constant="15" id="vLy-Xe-c3i"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="sMb-Ua-anL" id="o82-Cx-dzc"/>
+                        <outlet property="inputTextField2" destination="PN4-yG-p6g" id="dnJ-VC-cfF"/>
                         <outlet property="resultLabel" destination="hka-IN-ggA" id="nGH-Nj-cpK"/>
                     </connections>
                 </viewController>

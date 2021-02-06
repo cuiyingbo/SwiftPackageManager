@@ -12,6 +12,7 @@ import RxSwift
 import Alamofire
 public class DriverVC: UIViewController{
     @IBOutlet public private(set) weak var inputTextField: UITextField!
+    @IBOutlet public private(set) weak var inputTextField2: UITextField!
     @IBOutlet public private(set) weak var resultLabel: UILabel!
     private let _disposeBag: DisposeBag = DisposeBag()
     
@@ -24,9 +25,26 @@ public class DriverVC: UIViewController{
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.observer()
+        self.driver()
+        
     }
 }
 extension DriverVC{
+    func driver()  {
+        let result = inputTextField2.rx.text.orEmpty.asDriver().flatMap { (input)  in
+            return self.request(inputText: input).asDriver(onErrorJustReturn: "error")
+        }
+        
+        result.map { "copy:\($0)"
+        }.drive(self.resultLabel.rx.text)
+        .disposed(by: _disposeBag)
+        
+
+        result.map { "copy:\($0)"
+        }.drive(
+            self.inputTextField.rx.text)
+        .disposed(by: _disposeBag)
+    }
     func observer(){
         let result = inputTextField.rx.text.skip(1).flatMap { (input) -> Observable<Any>  in
             return self.request(inputText: input!).observeOn(MainScheduler.instance).catchErrorJustReturn("检查到了错误")
@@ -41,7 +59,7 @@ extension DriverVC{
             print("subscribe:\(Thread.current)")
             guard let value = even.element as? String else {return}
             self.resultLabel.text = value
-                
+
         }.disposed(by: _disposeBag)
     }
     func request(inputText: String) -> Observable<Any> {
