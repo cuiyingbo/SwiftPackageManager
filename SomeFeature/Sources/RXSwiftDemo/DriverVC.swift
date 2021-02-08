@@ -26,7 +26,6 @@ public class DriverVC: UIViewController{
         super.viewDidLoad()
         self.observer()
         self.driver()
-        
     }
 }
 extension DriverVC{
@@ -83,4 +82,6 @@ extension DriverVC{
     @IBAction func tapButton1(_ sender: Any){
         
     }
+    
+
 }
