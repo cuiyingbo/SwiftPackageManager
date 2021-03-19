@@ -90,13 +90,22 @@
                                     <action selector="tapDriver:" destination="fkw-e2-3fj" eventType="touchUpInside" id="hAY-bY-AS1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjG-qK-ze7">
+                                <rect key="frame" x="278" y="120" width="79" height="30"/>
+                                <state key="normal" title="Observable"/>
+                                <connections>
+                                    <action selector="tapAbservable:" destination="fkw-e2-3fj" eventType="touchUpInside" id="Q2X-LB-SlO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BjI-ny-Ou4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cfU-Iw-bG9" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="3m5-VQ-Yhb"/>
+                            <constraint firstItem="kjG-qK-ze7" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="IuP-MN-05o"/>
                             <constraint firstItem="yuU-jH-z4f" firstAttribute="top" secondItem="BjI-ny-Ou4" secondAttribute="top" constant="40" id="LTt-d4-ueM"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="centerX" secondItem="VQK-xf-mzM" secondAttribute="centerX" id="VU3-d5-QuU"/>
+                            <constraint firstItem="kjG-qK-ze7" firstAttribute="leading" secondItem="cHv-ov-gPM" secondAttribute="trailing" constant="15" id="heO-hB-XLA"/>
                             <constraint firstItem="yuU-jH-z4f" firstAttribute="centerX" secondItem="VQK-xf-mzM" secondAttribute="centerX" id="p70-uJ-GC4"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="qXZ-XF-tFc"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="leading" secondItem="cfU-Iw-bG9" secondAttribute="trailing" constant="15" id="vKZ-A4-kl4"/>

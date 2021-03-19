@@ -12,6 +12,7 @@ public class ChaptersVC:UIViewController{
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     public static func instaniate() -> ChaptersVC{
@@ -20,6 +21,10 @@ public class ChaptersVC:UIViewController{
 }
 
 extension ChaptersVC{
+    
+    @IBAction func tapAbservable(_ sender: Any){
+        ObserverObj().test()
+    }
     @IBAction func tapBehaviorSubject(_ sender: Any){
         BehaviorSubjectObj().test()
     }
