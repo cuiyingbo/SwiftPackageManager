@@ -17,7 +17,7 @@ public class ObserverObj:Any{
     init() {
         _observer = AnyObserver{ event in
             switch event{
-            case: .next(let string)
+            case .next(let string):
                 print("_observer:" + string)
             default:
                 break
