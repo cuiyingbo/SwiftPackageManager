@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 public class ChaptersVC:UIViewController{
-    
+    @IBOutlet var _pickerButton: UIButton!
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,5 +32,10 @@ extension ChaptersVC{
     }
     @IBAction func tapDriver(_ sender: Any){
         self.show(DriverVC.instaniate(), sender: nil);
+    }
+}
+extension ChaptersVC{
+    func rxPickerButton(){
+       
     }
 }

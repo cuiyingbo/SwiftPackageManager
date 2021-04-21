@@ -16,7 +16,9 @@ public class SomeVC:UIViewController{
             return
         }
         alert(message: string)
-        
+        Sort.insertSort()
+        Sort.mergeSortList()
+        Sort.quickSorter()
     }
     func alert(message:String) -> Void {
        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
@@ -25,6 +27,8 @@ public class SomeVC:UIViewController{
         present(alert, animated: true, completion: nil)
         
     }
+    
+  
 }
 public extension SomeVC {
     static func instantiate() -> SomeVC{

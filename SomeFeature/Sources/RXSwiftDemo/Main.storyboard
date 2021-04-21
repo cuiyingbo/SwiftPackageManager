@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -97,20 +96,35 @@
                                     <action selector="tapAbservable:" destination="fkw-e2-3fj" eventType="touchUpInside" id="Q2X-LB-SlO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-pq-7NR">
+                                <rect key="frame" x="48" y="171" width="130" height="30"/>
+                                <state key="normal" title="state:pureFunction"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfy-iB-fpS">
+                                <rect key="frame" x="25" y="495" width="64" height="30"/>
+                                <state key="normal" title="rx_picker"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BjI-ny-Ou4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cfU-Iw-bG9" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="3m5-VQ-Yhb"/>
+                            <constraint firstItem="Bfy-iB-fpS" firstAttribute="leading" secondItem="BjI-ny-Ou4" secondAttribute="leading" constant="25" id="6qc-sw-50t"/>
+                            <constraint firstItem="TwS-pq-7NR" firstAttribute="leading" secondItem="BjI-ny-Ou4" secondAttribute="leading" constant="48" id="GSk-DL-qrj"/>
                             <constraint firstItem="kjG-qK-ze7" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="IuP-MN-05o"/>
                             <constraint firstItem="yuU-jH-z4f" firstAttribute="top" secondItem="BjI-ny-Ou4" secondAttribute="top" constant="40" id="LTt-d4-ueM"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="centerX" secondItem="VQK-xf-mzM" secondAttribute="centerX" id="VU3-d5-QuU"/>
+                            <constraint firstItem="TwS-pq-7NR" firstAttribute="top" secondItem="cHv-ov-gPM" secondAttribute="bottom" constant="21" id="ddY-H5-SaW"/>
+                            <constraint firstItem="BjI-ny-Ou4" firstAttribute="bottom" secondItem="Bfy-iB-fpS" secondAttribute="bottom" constant="337" id="g7i-vq-iB4"/>
                             <constraint firstItem="kjG-qK-ze7" firstAttribute="leading" secondItem="cHv-ov-gPM" secondAttribute="trailing" constant="15" id="heO-hB-XLA"/>
                             <constraint firstItem="yuU-jH-z4f" firstAttribute="centerX" secondItem="VQK-xf-mzM" secondAttribute="centerX" id="p70-uJ-GC4"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="top" secondItem="yuU-jH-z4f" secondAttribute="bottom" constant="15" id="qXZ-XF-tFc"/>
                             <constraint firstItem="cHv-ov-gPM" firstAttribute="leading" secondItem="cfU-Iw-bG9" secondAttribute="trailing" constant="15" id="vKZ-A4-kl4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_pickerButton" destination="Bfy-iB-fpS" id="ZCL-GL-udy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPp-KU-0qH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
